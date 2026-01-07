@@ -12,12 +12,12 @@
         android:id="@+id/button"
         android:layout_width="182dp"
         android:layout_height="87dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="16dp"
         android:text="Change Alram"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -26,22 +26,34 @@
         android:layout_height="wrap_content"
         android:text="Alarm Will ring at: "
         android:textSize="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/TimeChosen"
+        app:layout_constraintBottom_toTopOf="@+id/textClock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.238" />
 
-    <TextView
-        android:id="@+id/TimeChosen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
-        android:text="11:00 AM"
-        android:textSize="48dp"
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="340dp"
+        android:layout_height="372dp"
+        android:layout_marginBottom="76dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textClock"
+        android:layout_width="338dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="80dp"
+        android:text="Current Time"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent" />
 
 
